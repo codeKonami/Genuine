@@ -1,4 +1,4 @@
-# Genuine 1.0.1
+# Genuine 1.0.2
 
 This library should be installed globally like so
 
