@@ -4,7 +4,7 @@ var fs = require('fs');
 var userArgs = process.argv.slice(2);
 var exec = require('child_process').exec;
 var pattern = /^[a-z\_\-]+$/;
-var repoSlug = "codeKonami/noob.js";
+var repoSlug = "codeKonami/genuine.js";
 var genuine = {
   create : function(){
     console.log("Creating project " + projectName + "...");
