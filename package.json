@@ -1,7 +1,7 @@
 {
   "name": "genuine",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "Genuine is a cli to generate genuine.js projects",
   "main": "genuine.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,10 @@
   "bin": {
     "genuine" : "bin/genuine.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codeKonami/genuine.git"
+  },
+  "author": "codeKonami",
   "license": "ISC"
 }
