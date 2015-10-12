@@ -1,4 +1,4 @@
-# Genuine 1.0.3
+# Genuine 1.0.4
 
 This library should be installed globally like so
 
@@ -17,7 +17,7 @@ genuine create foo
 
 ```
 
-By default, it will generate a noob project and integrate a genuine.json file.
+By default, it will generate a noob project and integrate a genuine.json file and a fabfile
 
 You can though precise any github project you'd like to copy like so.
 
