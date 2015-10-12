@@ -20,6 +20,13 @@ var genuine = {
             return console.log(err);
           }
           console.log("The file genuine.json has been added to the project.");
+          var child = exec('wget https://raw.githubusercontent.com/codeKonami/genuine-factory/master/fabfile.py -P '+ projectName +'/', function(err, stdout, stderr) {
+            if(err){
+              console.log(stderr);
+              return;
+            }
+            console.log("Fabfile added.");
+          });
         });
       });
     });
