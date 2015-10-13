@@ -31,11 +31,30 @@ var genuine = {
       });
     });
   },
+  get : function(){
+    console.log("Getting project " + projectName + "...");
+    var child = exec('git clone git@bitbucket.org:bananalabs/'+ projectName +'.git', function(err, stdout, stderr) {
+      if(err){
+        console.log(stderr);
+        return;
+      }
+      console.log("Project cloned");
+      console.log("Switching to develop branch...");
+      var child = exec('git -C '+ projectName +'/ checkout -b develop origin/develop', function(err, stdout, stderr) {
+        if(err){
+          console.log(stderr);
+          return;
+        }
+        console.log("Successfully switched to branch develop");
+      });
+    });
+  },
   shows : function(){
     console.log("Usage: genuine [action] <name of the project>");
     console.log("\n");
     console.log("Actions:");
     console.log("  create         create a new project");
+    console.log("  get            get an existing project");
     console.log("  shows help     show this page");
   }
 }
