@@ -1,6 +1,6 @@
 {
   "name": "genuine",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Genuine is a cli to generate genuine.js projects",
   "main": "genuine.js",
   "scripts": {
